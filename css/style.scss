@@ -1,0 +1,76 @@
+@import url(/css/null.css);
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: 1046px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+body {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgba(37, 43, 66, 1);
+    font-weight: 500;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+		&__container {
+            display: flex;
+            align-items: center;
+            min-height: 104px;
+		}
+		&__logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.1px;
+            color: rgba(37, 43, 66, 1);
+            line-height: 32px;
+		}
+		&__menu {
+            margin: 0 0 0 133px;
+            padding: 5px 0;
+            @media (max-width: 992px) {
+                margin: 0 0 0 80px;
+            }
+            @media (max-width: 767px) {
+                margin: 0 0 0 50px;
+            }
+            @media (max-width: 470px) {
+                margin: 0 0 0 20px;
+            }
+		}
+        
+}
+
+.menu {
+
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            
+		}
+
+		&__item {
+		}
+        &__item:not(:last-child) {
+            margin: 0 21px 0 0;
+        }
+
+		&__link {
+            font-weight: 600;
+            line-height: 171%;
+            letter-spacing: 0.2px;
+            color: rgba(115, 115, 115, 1);
+            @media (max-width: 470px) {
+                font-size: 18px;
+            }
+		}
+}
