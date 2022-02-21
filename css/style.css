@@ -2,6 +2,13 @@
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 ._container {
@@ -91,5 +98,55 @@ body {
   .menu__link {
     font-size: 18px;
   }
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.main-block__body {
+  max-width: 509px;
+  margin: 184px 0 191px 0;
+}
+
+.main-block__title {
+  font-size: 58px;
+  letter-spacing: 0.2px;
+  line-height: 80px;
+  font-weight: 800;
+}
+
+.main-block__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 35px 0;
+}
+
+.main-block__buttons {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  height: 48px;
+}
+
+.main-block__button {
+  background-color: #ff7b47;
+  color: white;
+  border-radius: 37px;
+  padding: 10px 36px;
+}
+
+.main-block__button_border {
+  margin-left: 10px;
+  color: #0d5c63;
+  border-color: #0d5c63;
+  border: solid 1px;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

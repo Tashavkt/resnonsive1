@@ -2,6 +2,8 @@
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 ._container {
     max-width: 1046px;
@@ -74,3 +76,60 @@ body {
             }
 		}
 }
+.footer {
+
+}
+.page {
+flex: 1 1 auto;
+
+    &__main-block {
+    }
+}
+.main-block {
+
+    &__container {
+        
+    }
+    &__body {
+        max-width: 509px;
+        margin: 184px 0 191px 0;
+    }
+    &__title {
+        font-size: 58px;
+        letter-spacing: 0.2px;
+        line-height: 80px;
+        font-weight: 800;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: rgba(115, 115, 115, 1);
+        margin: 35px 0;
+    }
+    &__buttons {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        height: 48px;
+    }
+    &__button {
+        background-color: rgba(255, 123, 71, 1);
+        color: white;
+        border-radius: 37px;
+        padding: 10px 36px;
+
+        
+    }
+    &__button_border {
+        margin-left: 10px;
+        color: rgba(13, 92, 99, 1);
+        border-color: rgba(13, 92, 99, 1);
+        border: solid 1px;
+        background-color: transparent;
+    }
+}
+
+
